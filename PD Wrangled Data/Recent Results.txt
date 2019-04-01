@@ -1,0 +1,78 @@
+1) 
+Input:
+train_data = pd.read_excel("PD Wrangled Data/Combined Data.xlsx", "Sheet4")
+test_data = pd.read_excel("PD Wrangled Data/Combined Data.xlsx", "Sheet4")
+
+train_row_st = 1
+train_row_end = 241
+train_col_st = 1
+train_col_end = 16
+
+test_row_st = 242
+test_row_end = 481
+test_col_st = 1
+test_col_end = 16
+
+label_col = 17
+
+Output:
+accuracyNB_CV : 0.875
+accuracyNB : 0.7740585774058577
+Detected Ones : 71
+Detected Zeros : 114
+accuracySVM_CV : 0.9583333333333334
+accuracySVM : 0.7322175732217573
+Detected Ones : 95
+Detected Zeros : 80
+accuracyRFC_CV : 1.0
+accuracyRFC : 0.8870292887029289
+Detected Ones : 107
+Detected Zeros : 105
+accuracyLREG_CV : 0.9583333333333334
+accuracyLREG : 0.7280334728033473
+Detected Ones : 91
+Detected Zeros : 83
+accuracyk-NN_CV : 0.8
+accuracyK_NN : 0.6108786610878661
+Detected Ones : 81
+Detected Zeros : 65
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Input:
+train_data = pd.read_excel("PD Wrangled Data/UCI_1040.xlsx", "WholeData")
+test_data = pd.read_excel("PD Wrangled Data/UCI_1040.xlsx", "WholeData")
+
+train_row_st = 2
+train_row_end = 869
+train_col_st = 1
+train_col_end = 26
+
+test_row_st = 870
+test_row_end = 1210
+test_col_st = 1
+test_col_end = 26
+
+label_col = 28
+
+Output:
+accuracyNB_CV : 0.6781609195402298
+accuracyNB : 0.6194690265486725
+Detected Ones : 154
+Detected Zeros : 56
+accuracySVM_CV : 0.735632183908046
+accuracySVM : 0.672566371681416
+Detected Ones : 167
+Detected Zeros : 61
+accuracyRFC_CV : 0.7931034482758621
+accuracyRFC : 0.7079646017699115
+Detected Ones : 148
+Detected Zeros : 92
+accuracyLREG : 0.6873156342182891
+Detected Ones : 169
+Detected Zeros : 64
+accuracyk-NN_CV : 0.7325581395348837
+accuracyK_NN : 0.6519174041297935
+Detected Ones : 136
+Detected Zeros : 85
